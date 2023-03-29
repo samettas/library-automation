@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24AF2B2F-FC86-4237-AEF1-73DB70389372}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneOtomasyonu</RootNamespace>
+    <AssemblyName>KutuphaneOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirimDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirimDuzenle.Designer.cs">
+      <DependentUpon>BirimDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BolumDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolumDuzenle.Designer.cs">
+      <DependentUpon>BolumDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanismaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanismaGiris.Designer.cs">
+      <DependentUpon>DanismaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_KUTUPHANEDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_KUTUPHANEDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Emanet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emanet.Designer.cs">
+      <DependentUpon>Emanet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IstatistikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IstatistikForm.Designer.cs">
+      <DependentUpon>IstatistikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.Designer.cs">
+      <DependentUpon>KategoriDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiralama.Designer.cs">
+      <DependentUpon>Kiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciDuzenle.Designer.cs">
+      <DependentUpon>OgrenciDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelDuzenle.Designer.cs">
+      <DependentUpon>PersonelDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YazarDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarDuzenle.Designer.cs">
+      <DependentUpon>YazarDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapDuzenle.Designer.cs">
+      <DependentUpon>KitapDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YayinEviDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YayinEviDuzenle.Designer.cs">
+      <DependentUpon>YayinEviDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliGiris.Designer.cs">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirimDuzenle.resx">
+      <DependentUpon>BirimDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolumDuzenle.resx">
+      <DependentUpon>BolumDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanismaGiris.resx">
+      <DependentUpon>DanismaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emanet.resx">
+      <DependentUpon>Emanet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IstatistikForm.resx">
+      <DependentUpon>IstatistikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriDuzenle.resx">
+      <DependentUpon>KategoriDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiralama.resx">
+      <DependentUpon>Kiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciDuzenle.resx">
+      <DependentUpon>OgrenciDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelDuzenle.resx">
+      <DependentUpon>PersonelDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarDuzenle.resx">
+      <DependentUpon>YazarDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapDuzenle.resx">
+      <DependentUpon>KitapDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YayinEviDuzenle.resx">
+      <DependentUpon>YayinEviDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliGiris.agq-CM.resx">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliGiris.resx">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB_KUTUPHANEDataSet.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet1.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet1.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet10.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet10.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet11.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet11.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet12.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet12.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet13.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet13.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet14.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet14.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet2.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet2.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet3.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet3.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet4.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet4.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet5.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet5.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet6.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet6.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet7.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet7.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet8.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet8.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet9.xsc">
+      <DependentUpon>DB_KUTUPHANEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_KUTUPHANEDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_KUTUPHANEDataSet9.xss">
+      <DependentUpon>DB_KUTUPHANEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_etu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erzurum-Teknik-Üniversitesi-Logo-1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
